@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libra | Your Personal Library</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@600&family=Noto+Sans+Tangsa:wght@600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@600&family=Noto+Sans+Tangsa:wght@600&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar">
+      <h1 class="logo-text">Libra</h1>
+  </div>
+  <div class="main-content">
+    <div class="add-div">
+      <button class="add-book-btn button-39" type="button">Add Book &nbsp;<i class="fa fa-plus-circle"
+          aria-hidden="true"></i></button>
+    </div>
+    <div class="book-add-form-div">
+      <form id="book-add-form">
+        <legend class="form-lb">Add new book</legend>
+        <input id="new-title" class="form-in" type="text" placeholder="Title" autocomplete="off" />
+        <input id="new-author" class="form-in author" type="text" placeholder="Author" autocomplete="off" />
+        <input id="new-pages" class="form-in pages" type="number" placeholder="Pages" autocomplete="off"/>
+        <label class="read-status-lb">Have you read it? &nbsp;<input class="initial-book-st" type="checkbox"
+            value="false" /></label>
+
+        <button class="add-to-lib formBtn" type="submit">Add to Library</button>
+        <button class="formBtn cancel-form" type="button">Cancel</button>
+      </form>
+    </div>
+    <div class="con">
+      <div class="books-grid">
+      </div>
+    </div>
+    <footer class = "footer">Crafted with ❤️ by &nbsp;<a href = "https://github.com/faexan" target="_blank"><span class = "fa fa-github" aria-hidden="true"></span>/faexan</span></a></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
