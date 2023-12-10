@@ -1,13 +1,16 @@
 const readStTrColor = "cadetblue";
-const readStFaColor = "indianred"
+const readStFaColor = "indianred";
+const container = document.querySelector(".con");
 const addBook = document.querySelector(".add-book-btn");
 let addBookForm = document.querySelector("#book-add-form");
 addBook.addEventListener("click", () => {
   addBookForm.style.display = "flex";
+  container.style.pointerEvents = "none";
 })
 const cancelForm = document.querySelector(".cancel-form");
 cancelForm.addEventListener("click", () => {
   addBookForm.style.display = "none";
+  container.style.pointerEvents = "auto";
 })
 
 const newBookTitle = document.querySelector("#new-title");
@@ -26,6 +29,7 @@ submitBtn.addEventListener("click", (e) => {
   clrScr();
   displayBook(myLibrary);
   addBookForm.style.display = "none";
+  container.style.pointerEvents = "auto";
   } else {
     alert("Please add all the fields!");
   }
